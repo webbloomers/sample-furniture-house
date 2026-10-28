@@ -1,0 +1,26 @@
+[
+  {
+    "id": "oak-sofa-3-seater",
+    "slug": "oak-sofa-3-seater",
+    "name": "Oakwood 3-Seater Sofa",
+    "category": "sofas",
+    "price": 42000,
+    "material": "Sheesham wood, linen upholstery",
+    "dimensions": { "width": 210, "depth": 90, "height": 85, "unit": "cm" },
+    "description": "A solid-wood sofa with removable cushion covers.",
+    "images": ["images/oak-sofa-1.jpg"],
+    "featured": true
+  },
+  {
+    "id": "teak-dining-table",
+    "slug": "teak-dining-table",
+    "name": "Teak 6-Seater Dining Table",
+    "category": "tables",
+    "price": 38000,
+    "material": "Teak wood",
+    "dimensions": { "width": 180, "depth": 90, "height": 76, "unit": "cm" },
+    "description": "A sturdy dining table with a natural finish.",
+    "images": ["images/teak-table-1.jpg"],
+    "featured": false
+  }
+]
