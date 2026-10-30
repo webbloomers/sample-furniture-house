@@ -5,16 +5,7 @@
   --surface: #E8D8BF;
   --nav: #2F4A3A;
   --accent: #B4531F;
-  :root {
-  --bg: #F5EBDD;
-  --surface: #E8D8BF;
-  --nav: #2F4A3A;
-  --accent: #B4531F;
-  --accent-dark: #A34A1A;   /* new line */
-  --tag: #8A9A7B;
-  --text: #2B1D14;
-  ...
-}
+  --accent-dark: #A34A1A;
   --tag: #8A9A7B;
   --text: #2B1D14;
 
