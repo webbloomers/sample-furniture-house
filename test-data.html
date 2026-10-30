@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data layer test</title>
+</head>
+<body>
+  <h1>Data layer test</h1>
+  <pre id="output">Loading...</pre>
+
+  <script src="js/data.js"></script>
+  <script>
+    async function runTests() {
+      const out = document.getElementById("output");
+      try {
+        const all = await getAllProducts();
+        const featured = await getFeaturedProducts();
+        const categories = await getCategories();
+        const one = await getProductBySlug(all[0].slug);
+        const missing = await getProductBySlug("does-not-exist");
+        const sofas = await getProductsByCategory("sofa");
+
+        out.textContent =
+          "All products: " + all.length + "\n" +
+          "Featured: " + featured.length + "\n" +
+          "Categories: " + categories.join(", ") + "\n" +
+          "Sofas: " + sofas.length + "\n" +
+          "First by slug: " + one.name + "\n" +
+          "Price format: " + formatPrice(one.price) + "\n" +
+          "Missing slug returns: " + missing;
+      } catch (err) {
+        out.textContent = "FAILED: " + err.message;
+      }
+    }
+    runTests();
+  </script>
+</body>
+</html>
