@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom order form test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Request a custom order</h1>
+
+    <form id="custom-order-form" novalidate>
+      <label for="co-name">Name</label>
+      <input id="co-name" name="name" type="text" autocomplete="name">
+      <p class="field-error" data-error-for="co-name"></p>
+
+      <label for="co-phone">Phone</label>
+      <input id="co-phone" name="phone" type="tel" autocomplete="tel">
+      <p class="field-error" data-error-for="co-phone"></p>
+
+      <label for="co-type">Furniture type</label>
+      <select id="co-type" name="furniture_type">
+        <option value="">Select a type</option>
+        <option value="bed">Bed</option>
+        <option value="sofa">Sofa</option>
+        <option value="dining table">Dining table</option>
+        <option value="tv cabinet">TV cabinet</option>
+        <option value="other">Other</option>
+      </select>
+      <p class="field-error" data-error-for="co-type"></p>
+
+      <label for="co-size">Size (optional)</label>
+      <input id="co-size" name="size" type="text" placeholder="e.g. 180 x 90 x 76 cm">
+
+      <label for="co-material">Preferred material (optional)</label>
+      <select id="co-material" name="material">
+        <option value="">Not sure yet</option>
+        <option value="sheesham">Sheesham</option>
+        <option value="teak">Teak</option>
+        <option value="oak">Oak</option>
+        <option value="walnut">Walnut</option>
+        <option value="engineered wood">Engineered wood</option>
+      </select>
+
+      <label for="co-budget">Budget (optional)</label>
+      <select id="co-budget" name="budget">
+        <option value="">Prefer not to say</option>
+        <option value="under 25,000">Under ₹25,000</option>
+        <option value="25,000 to 50,000">₹25,000 to ₹50,000</option>
+        <option value="50,000 to 1,00,000">₹50,000 to ₹1,00,000</option>
+        <option value="above 1,00,000">Above ₹1,00,000</option>
+      </select>
+
+      <label for="co-details">Describe what you need</label>
+      <textarea id="co-details" name="details" rows="5"></textarea>
+      <p class="field-error" data-error-for="co-details"></p>
+
+      <!-- Honeypot: real people never see or fill this -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+      <input type="hidden" name="_subject" value="New custom order request - Oakline Furnishing">
+      <input type="hidden" name="form_type" value="custom-order">
+
+      <button type="submit" id="co-submit">Send request</button>
+      <p id="co-status" role="status"></p>
+    </form>
+  </main>
+
+  <script src="js/custom-order.js"></script>
+</body>
+</html>
