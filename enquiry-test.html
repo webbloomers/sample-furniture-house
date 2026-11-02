@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry form test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Enquire about a product</h1>
+
+    <form id="enquiry-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name">
+      <p class="field-error" data-error-for="name"></p>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel">
+      <p class="field-error" data-error-for="phone"></p>
+
+      <label for="product">Product</label>
+      <select id="product" name="product">
+        <option value="">Select a product</option>
+      </select>
+      <p class="field-error" data-error-for="product"></p>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <p class="field-error" data-error-for="message"></p>
+
+      <!-- Honeypot: real people never see or fill this -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+      <input type="hidden" name="_subject" value="New enquiry from Oakline Furnishing">
+
+      <button type="submit" id="submit-btn">Send enquiry</button>
+      <p id="form-status" role="status"></p>
+    </form>
+
+    <a id="whatsapp-btn" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/enquiry.js"></script>
+</body>
+</html>
