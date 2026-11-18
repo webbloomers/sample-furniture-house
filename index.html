@@ -11,20 +11,24 @@
   <h1>Products</h1>
   <ul id="list"></ul>
 
-  <script>
-    fetch("data/products.json")
-      .then((res) => res.json())
-      .then((products) => {
-        const list = document.getElementById("list");
-        products.forEach((p) => {
-          list.innerHTML += `
-            <li>
-              <img src="${p.images[0]}" width="200" alt="${p.name}">
-              <p>${p.name}: ₹${p.price}</p>
-            </li>`;
-        });
-      })
-      .catch((err) => console.error("Could not load products:", err));
+  <script src="js/data.js"></script>
+<script>
+  async function showProducts() {
+    const list = document.getElementById("list");
+    const products = await getAllProducts();
+
+    products.forEach((p) => {
+      list.innerHTML += `
+        <li>
+          <a href="product.html?slug=${p.slug}">
+            <img src="${p.images[0]}" width="200" alt="${p.name}">
+            <p>${p.name}: ${formatPrice(p.price)}</p>
+          </a>
+        </li>`;
+    });
+  }
+
+  showProducts();
   </script>
 </body>
 </html>
