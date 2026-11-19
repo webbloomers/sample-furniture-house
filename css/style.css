@@ -23,3 +23,43 @@ body {
 h1, h2, h3 {
   font-family: var(--font-heading);
 }
+
+.navbar {
+  background: var(--nav);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+.navbar a { color: #fff; text-decoration: none; }
+.logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a:hover { text-decoration: underline; }
+.hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--nav);
+    padding: 1rem 1.5rem;
+  }
+  .nav-links.open { display: flex; }
+}
+.footer {
+  background: var(--nav);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+}
+.footer a { color: #fff; display: block; text-decoration: none; margin-bottom: .3rem; }
+.footer a:hover { text-decoration: underline; }
