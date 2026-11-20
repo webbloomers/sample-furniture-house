@@ -16,7 +16,7 @@ async function showProduct() {
       return;
     }
 
-    document.title = p.name + ' - Furniture House';
+    document.title = p.name + ' - Oakline Furnishing';
     const d = p.dimensions;
     
     detail.innerHTML = `
