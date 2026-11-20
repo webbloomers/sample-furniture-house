@@ -1,6 +1,6 @@
 const navbarHTML = `
   <header class="navbar">
-    <a href="index.html" class="logo">Furniture House</a>
+    <a href="index.html" class="logo">Oakland Furnishing</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
     <nav>
       <ul class="nav-links" id="nav-links">
@@ -15,7 +15,7 @@ const navbarHTML = `
 const footerHTML = `
   <footer class="footer">
     <div class="footer-col">
-      <h3>Furniture House</h3>
+      <h3>Oakland Furnishing</h3>
       <p>Handcrafted furniture for your home.</p>
     </div>
     <div class="footer-col">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Furniture House</title>
+  <title>Oakland Furnishing</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,16 +12,46 @@
 </head>
    
     <script src="js/main.js"></script>
-    <body>
-    
-  <h1>Products</h1>
-  <ul id="list"></ul>
-  
-  
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Oakland Furnishing</h1>
+      <p>Discover beautifully crafted furniture that brings comfort, style, and lasting quality to every corner of your home.</p>
+      <a href="products.html" class="btn">Browse the catalogue</a>
+    </div>
+  </section>
+
+  <main>
+    <h2>Shop by category</h2>
+    <div class="tiles">
+      <a class="tile" href="products.html?category=bed">Bed</a>
+      <a class="tile" href="products.html?category=sofa">Sofa</a>
+      <a class="tile" href="products.html?category=dining table">Dining Table</a>
+      <a class="tile" href="products.html?category=tv cabinet">TV Cabinet</a>
+    </div>
+
+    <h2 class="section-title">Featured products</h2>
+    <div class="product-grid" id="featured-grid"></div>
+
+    <h2 class="section-title">What our customers say</h2>
+    <div class="testimonials">
+      <blockquote class="testimonial">
+        <p>"Great furniture quality and beautiful designs. The team was helpful throughout the selection process."</p>
+        <cite>Rahul Sharma, Jaipur</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Found exactly what I was looking for! The furniture looks beautiful and fits perfectly in my home."</p>
+        <cite> Priya Verma, Udaipur</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Good collection, reasonable pricing, and a smooth buying experience. Would definitely recommend exploring their products."</p>
+        <cite>Aman Gupta, Delhi</cite>
+      </blockquote>
+    </div>
+  </main>
 
   <script src="js/data.js"></script>
-
-</body>
+  <script src="js/home.js"></script>
+  <script src="js/main.js"></script>
 <script>
     document.getElementById('hamburger').addEventListener('click', () => {
       document.getElementById('nav-links').classList.toggle('open');
