@@ -1,5 +1,4 @@
 const detail = document.getElementById('product-detail');
-const WHATSAPP_NUMBER = '919876543210'; // replace with the real number from Sh
 
 async function showProduct() {
   const slug = new URLSearchParams(window.location.search).get('slug');
@@ -19,8 +18,7 @@ async function showProduct() {
 
     document.title = p.name + ' - Furniture House';
     const d = p.dimensions;
-    const message = encodeURIComponent('Hi, I am interested in the ' + p.name);
-
+    
     detail.innerHTML = `
       <div class="product-layout">
         <div class="gallery">
@@ -40,7 +38,7 @@ async function showProduct() {
             <li><strong>Material:</strong> ${p.material}</li>
             <li><strong>Size:</strong> ${d.width} x ${d.depth} x ${d.height} ${d.unit} (W x D x H)</li>
           </ul>
-          <a class="btn" href="https://wa.me/${WHATSAPP_NUMBER}?text=${message}" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+                    <a class="btn" href="#enquire">Enquire about this product</a>
         </div>
       </div>`;
 

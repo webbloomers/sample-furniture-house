@@ -56,7 +56,8 @@ async function fillProducts() {
     });
 
     // product.html can link here with ?product=<slug> to preselect the product
-    const slug = new URLSearchParams(window.location.search).get("product");
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("product") || params.get("slug");
     const match = products.find((p) => p.slug === slug);
     if (match) productSelect.value = match.name;
   } catch (err) {
