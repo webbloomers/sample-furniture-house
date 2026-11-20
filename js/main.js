@@ -38,3 +38,13 @@ document.body.insertAdjacentHTML('beforeend', footerHTML);
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('nav-links').classList.toggle('open');
 });
+
+
+// If any image fails to load, show the placeholder instead
+document.addEventListener('error', (e) => {
+  const img = e.target;
+  if (img.tagName === 'IMG' && !img.dataset.failed) {
+    img.dataset.failed = 'true';
+    img.src = 'images/placeholder.svg';
+  }
+}, true);

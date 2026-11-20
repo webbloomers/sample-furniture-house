@@ -183,3 +183,36 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
 @media (max-width: 768px) {
   .contact-layout { grid-template-columns: 1fr; }
 }
+
+
+.form-section { margin-top: 3rem; max-width: 600px; }
+form label { display: block; margin-top: 1rem; font-weight: 600; }
+form input[type="text"], form input[type="tel"], form select, form textarea {
+  width: 100%;
+  margin-top: .3rem;
+  padding: .7rem;
+  border: 1px solid var(--tag);
+  border-radius: 6px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+form button[type="submit"] {
+  margin-top: 1.2rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: .7rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form button[type="submit"]:hover { background: var(--accent-dark); }
+form button[type="submit"]:disabled { opacity: .6; cursor: not-allowed; }
+.field-error { color: #b00020; font-size: .85rem; min-height: 1.1rem; margin: .2rem 0 0; }
+#form-status, #co-status { margin-top: 1rem; font-weight: 600; }
+.success { color: #2F6B3A; }
+.error { color: #b00020; }
+.whatsapp-btn { margin-top: 1rem; }
