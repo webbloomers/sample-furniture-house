@@ -109,3 +109,21 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
   text-align: center;
 }
 .btn:hover { background: var(--accent-dark); }
+
+
+.filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
+
+.filter-btn {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  font-weight: 700;
+  font-size: .95rem;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.filter-btn:hover { background: var(--surface); }
+.filter-btn.active { background: var(--accent); color: #fff; }
+
+.empty-message { grid-column: 1 / -1; padding: 2rem 0; font-size: 1.1rem; }
