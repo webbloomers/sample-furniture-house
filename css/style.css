@@ -127,3 +127,18 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
 .filter-btn.active { background: var(--accent); color: #fff; }
 
 .empty-message { grid-column: 1 / -1; padding: 2rem 0; font-size: 1.1rem; }
+
+
+.product-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.main-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; display: block; }
+.thumbs { display: flex; gap: .6rem; margin-top: .6rem; }
+.thumb { width: 80px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; cursor: pointer; border: 2px solid transparent; }
+.thumb.active { border-color: var(--accent); }
+.info { display: flex; flex-direction: column; gap: .8rem; align-items: flex-start; }
+.specs { list-style: none; padding: 0; display: flex; flex-direction: column; gap: .4rem; }
+.not-found { text-align: center; padding: 3rem 0; }
+.not-found .btn { margin-top: 1rem; }
+
+@media (max-width: 768px) {
+  .product-layout { grid-template-columns: 1fr; }
+}
