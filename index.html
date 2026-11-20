@@ -12,16 +12,46 @@
 </head>
    
     <script src="js/main.js"></script>
-    <body>
-    
-  <h1>Products</h1>
-  <ul id="list"></ul>
-  
-  
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Handcrafted furniture for your home</h1>
+      <p>Warm, minimal pieces made from solid wood.</p>
+      <a href="products.html" class="btn">Browse the catalogue</a>
+    </div>
+  </section>
+
+  <main>
+    <h2>Shop by category</h2>
+    <div class="tiles">
+      <a class="tile" href="products.html?category=bed">Bed</a>
+      <a class="tile" href="products.html?category=sofa">Sofa</a>
+      <a class="tile" href="products.html?category=dining table">Dining Table</a>
+      <a class="tile" href="products.html?category=tv cabinet">TV Cabinet</a>
+    </div>
+
+    <h2 class="section-title">Featured products</h2>
+    <div class="product-grid" id="featured-grid"></div>
+
+    <h2 class="section-title">What our customers say</h2>
+    <div class="testimonials">
+      <blockquote class="testimonial">
+        <p>Testimonial 1 goes here.</p>
+        <cite>Customer name, City</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>Testimonial 2 goes here.</p>
+        <cite>Customer name, City</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>Testimonial 3 goes here.</p>
+        <cite>Customer name, City</cite>
+      </blockquote>
+    </div>
+  </main>
 
   <script src="js/data.js"></script>
-
-</body>
+  <script src="js/home.js"></script>
+  <script src="js/main.js"></script>
 <script>
     document.getElementById('hamburger').addEventListener('click', () => {
       document.getElementById('nav-links').classList.toggle('open');

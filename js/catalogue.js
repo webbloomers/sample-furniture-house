@@ -42,4 +42,8 @@ filters.addEventListener('click', (e) => {
   showProducts(btn.dataset.category);
 });
 
-showProducts('all');
+const startCategory = new URLSearchParams(window.location.search).get('category') || 'all';
+document.querySelectorAll('.filter-btn').forEach(b => {
+  b.classList.toggle('active', b.dataset.category === startCategory);
+});
+showProducts(startCategory);
