@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css\style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Furniture House</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+   
+    <script src="js/main.js"></script>
+    <body>
+    
   <h1>Products</h1>
   <ul id="list"></ul>
+  
+  
 
   <script src="js/data.js"></script>
-<script>
-  async function showProducts() {
-    const list = document.getElementById("list");
-    const products = await getAllProducts();
 
-    products.forEach((p) => {
-      list.innerHTML += `
-        <li>
-          <a href="product.html?slug=${p.slug}">
-            <img src="${p.images[0]}" width="200" alt="${p.name}">
-            <p>${p.name}: ${formatPrice(p.price)}</p>
-          </a>
-        </li>`;
-    });
-  }
-
-  showProducts();
-  </script>
 </body>
+<script>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+  </script>
 </html>
