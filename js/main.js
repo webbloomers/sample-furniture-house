@@ -5,7 +5,7 @@ const navbarHTML = `
     <nav>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="products.html">Catalogue</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -21,7 +21,7 @@ const footerHTML = `
     <div class="footer-col">
       <h4>Links</h4>
       <a href="index.html">Home</a>
-      <a href="catalogue.html">Catalogue</a>
+      <a href="products.html">Catalogue</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="footer-col">
