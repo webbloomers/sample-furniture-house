@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /test-data.html
+Disallow: /enquiry-test.html
+Disallow: /custom-order-test.html
+
+Sitemap: https://sample-furniture-house.netlify.app/sitemap.xml
