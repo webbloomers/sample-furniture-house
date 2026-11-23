@@ -1,11 +1,10 @@
 const grid = document.getElementById('product-grid');
 const filters = document.getElementById('filters');
 
-function cardHTML(p) {
+function cardHTML(p, i) {
   return `
     <article class="product-card">
-      <img src="${p.images[0]}" alt="${p.name}">
-      <div class="card-body">
+    <img src="${p.images[0]}" alt="${p.name}" width="600" height="400" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}>      <div class="card-body">
         <span class="category-tag">${p.category}</span>
         <h3>${p.name}</h3>
         <p class="price">₹${p.price.toLocaleString('en-IN')}</p>
