@@ -25,7 +25,7 @@ async function showProduct() {
           <img id="main-image" class="main-image" src="${p.images[0]}" alt="${p.name}">
           <div class="thumbs">
             ${p.images.map((src, i) => `
-              <img class="thumb ${i === 0 ? 'active' : ''}" src="${src}" alt="${p.name} view ${i + 1}">
+              <img class="thumb ${i === 0 ? 'active' : ''}" src="${src}" alt="${p.name} view ${i + 1}" loading="lazy">
             `).join('')}
           </div>
         </div>
