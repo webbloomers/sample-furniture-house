@@ -71,6 +71,7 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
+  min-height: 100vh;
 }
 
 .product-card {
@@ -81,7 +82,7 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
   display: flex;
   flex-direction: column;
 }
-.product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.product-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
 .card-body { padding: 1rem; display: flex; flex-direction: column; gap: .5rem; }
 
 .category-tag {
