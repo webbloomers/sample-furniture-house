@@ -86,7 +86,7 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
 
 .category-tag {
   align-self: flex-start;
-  background: var(--tag);
+  background: #2f4a3c;
   color: #fff;
   font-size: .75rem;
   padding: .2rem .6rem;
