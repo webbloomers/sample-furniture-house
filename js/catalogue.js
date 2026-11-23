@@ -4,7 +4,7 @@ const filters = document.getElementById('filters');
 function cardHTML(p) {
   return `
     <article class="product-card">
-      <img src="${p.images[0]}" alt="${p.name}">
+      <img src="${p.images[0]}" alt="${p.name}" width="600" height="400" loading="lazy">
       <div class="card-body">
         <span class="category-tag">${p.category}</span>
         <h3>${p.name}</h3>
