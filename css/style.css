@@ -171,7 +171,7 @@ main { padding: 2rem 1.5rem; max-width: 1200px; margin: 0 auto; }
 .tile:hover { background: var(--accent); }
 
 .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
-.testimonial { background: var(--surface); margin: 0; padding: 1.5rem; border-radius: 10px; }
+.testimonial { background: var(--surface); margin: 0; padding: 1.5rem; border-radius: 10px; border: 2px solid #000; }
 .testimonial cite { display: block; margin-top: .8rem; font-weight: 600; font-style: normal; }
 
 
