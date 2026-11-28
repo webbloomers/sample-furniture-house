@@ -34,7 +34,7 @@ h1, h2, h3 {
   position: relative;
 }
 .navbar a { color: #fff; text-decoration: none; }
-.logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; }
+.logo { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; }
 .nav-links { list-style: none; display: flex; gap: 1.5rem; }
 .nav-links a:hover { text-decoration: underline; }
 .hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; }
@@ -219,3 +219,7 @@ form button[type="submit"]:disabled { opacity: .6; cursor: not-allowed; }
 .success { color: #2F6B3A; }
 .error { color: #b00020; }
 .whatsapp-btn { margin-top: 1rem; }
+
+.logo-img {
+  border-radius: 50%;
+}

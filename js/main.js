@@ -1,6 +1,6 @@
 const navbarHTML = `
   <header class="navbar">
-    <a href="index.html" class="logo">Oakline Furnishing</a>
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="" width="44" height="44" class="logo-img"></a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
     <nav>
       <ul class="nav-links" id="nav-links">
@@ -15,6 +15,7 @@ const navbarHTML = `
 const footerHTML = `
   <footer class="footer">
     <div class="footer-col">
+      <img src="images/logo.png" alt="Oakline Furnishing" width="72" height="72" class="logo-img">
       <h3>Oakline Furnishing</h3>
       <p>Handcrafted furniture for your home.</p>
     </div>
